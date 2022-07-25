@@ -42,9 +42,16 @@ fetch(url ,
 })
 .then((res ) =>  {
     if(res.ok){
-         swal("SAVED", "Employee saved successfully", "success");              
-    }
+                 
+      
 
+         swal("SAVED", "update successful", "success")
+         .then((value) => {
+            window.document.location = "./index.html"
+         });
+        
+    }
+ 
     return res;
 
 })

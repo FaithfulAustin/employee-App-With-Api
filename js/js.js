@@ -76,12 +76,7 @@ function deleteEmployee(givenId) {
 
 }
 
-function editEmployee(givenId) {
-  // const url = 'https://postgresql-emloyee-app.herokuapp.com/api/v1/employee/' + givenId + '';
-  // fetch(url, { method: "PUT" })
-  // employeeData();
-   window.document.location = './edit.html'+'?'+givenId
-}
+
 async function deleteFunction(id){
   const url = "https://postgresql-emloyee-app.herokuapp.com/api/v1/employees";
   const response = await fetch(url);
@@ -105,7 +100,7 @@ async function deleteFunction(id){
   .then((willDelete) => {
     if (willDelete) {
       deleteEmployee(id);
-      employeeData();
+      employeeData().then()
       swal("Poof! Your imaginary file has been deleted!", {
         icon: "success",
       });

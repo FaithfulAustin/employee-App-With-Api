@@ -25,6 +25,7 @@ function save(){
 
         })
         .then((res ) =>  {
+            console.log(res)
             if(res.ok){
                  swal("SAVED", "Employee saved successfully", "success");              
             }
