@@ -9,6 +9,9 @@
     /* background-color: aqua; */
     /* height: 500px; */
 }
+button{
+  cursor: pointer;
+}
 nav{
     width: 20%;
     /* background-color: whitesmoke; */
